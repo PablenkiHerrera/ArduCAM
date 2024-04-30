@@ -1,0 +1,17 @@
+// Definir el número de pin interno que se utilizará para el LED interno en la Raspberry Pi Pico
+const int ledPin = LED_BUILTIN;
+
+void setup() {
+  // Inicializar el pin del LED interno como salida
+  pinMode(ledPin, OUTPUT);
+}
+
+void loop() {
+  // Encender el LED interno
+  digitalWrite(ledPin, HIGH);
+  delay(1000); // Esperar 1 segundo
+
+  // Apagar el LED interno
+  digitalWrite(ledPin, LOW);
+  delay(1000); // Esperar 1 segundo
+}
